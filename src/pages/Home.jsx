@@ -8,7 +8,7 @@ function Home() {
     <div>
         <div className='overflow-hidden'>
             <Navbar></Navbar>
-            {/* <HeroSection /> */}
+            <HeroSection />
             <Testing />
         </div>
     </div>
