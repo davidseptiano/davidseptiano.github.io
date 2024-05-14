@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 function Home() {
   return (
     <div>
-        <div className='text-violet-600'>
-            <h1>HELOO</h1>
+        <div className='overflow-hidden'>
+            <Navbar></Navbar>
         </div>
     </div>
   )
