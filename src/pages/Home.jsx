@@ -1,17 +1,22 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/Home/HeroSection'
-import Testing from '../components/Home/Testing'
-import Kntl from '../components/Home/kntl'
 
 function Home() {
+  const [username, setUsername] = useState('');
+
+  useEffect(() => {
+    const storedUsername = localStorage.getItem('username');
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
+  }, []);
+
   return (
     <div>
         <div className='overflow-hidden'>
-            <Navbar></Navbar>
-            <HeroSection />
-            <Testing />
-            <Kntl />
+          <Navbar username={username} setUsername={setUsername} />
+          <HeroSection />
         </div>
     </div>
   )
