@@ -13,7 +13,7 @@ const Login = ({ setUsername }) => {
   };
 
   return (
-    <div>
+    <div class='login-container'>
       <h2>Login</h2>
       <input 
         type="text" 
