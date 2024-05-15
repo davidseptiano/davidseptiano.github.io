@@ -156,3 +156,8 @@
     transition: 250ms;
   }
 }
+
+.navbar-username {
+  color: white;
+  margin-right: 125px;
+}
