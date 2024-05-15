@@ -1,52 +1,57 @@
 /* Set the background */
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('path/to/your/background/image.jpg');
-    background-size: cover;
-    background-position: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/public/Assets/images/img-home.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Container for the login form */
 .login-container {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 300px;
-    text-align: center;
-    color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: center;
+  color: white;
 }
 
 .login-container h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .login-container input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background: #222;
-    color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #222;
+  color: white;
 }
 
 .login-container button {
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0;
-    border: none;
-    border-radius: 5px;
-    background: #007bff;
-    color: white;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
 }
 
 .login-container button:hover {
-    background: #0056b3;
+  background: #0056b3;
 }
